@@ -1,14 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('contactForm');
-
-    form.addEventListener('submit', function(event) {
+$(document).ready(function() {
+    $('#contactForm').submit(function(event) {
         event.preventDefault(); // Prevent form submission
 
         // Get form values
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const status = document.querySelector('input[name="status"]:checked');
-        const message = document.getElementById('message').value.trim();
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const status = $('input[name="status"]:checked');
+        const message = $('#message').val().trim();
 
         // Validation
         let isValid = true;
@@ -30,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
 
-        if (!status) {
+        if (!status.length) {
             errors.push('Please select your marital status');
             isValid = false;
         }
