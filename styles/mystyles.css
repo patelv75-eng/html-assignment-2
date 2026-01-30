@@ -20,20 +20,23 @@ header {
     text-align: center;
 }
 
-header h1 {
+header  {
     margin-bottom: 0.5rem;
 }
-
+h1{
+    text-align: center;
+    color: turquoise;
+}
 .nev {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 1rem;
 }
 
 .nev li a {
-    color: white;
+    color: rgb(22, 25, 200);
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
