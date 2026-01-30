@@ -4,13 +4,11 @@
     <head>
         <title>assignment-2</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-<link rel="stylesheet" href="/styles/mystyles.css">
+        <link rel="stylesheet" href="styles/mystyles.css">
     </head>
 
 <body>
+
     <h1>WanderWorld</h1>
     
     <ul class="nev">
@@ -20,14 +18,69 @@
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+
     
     <div class="contents">
         <img class="im1" src="image/img1.webp" alt="">
         <div class="text-content">
             <h2 class="h2">Welcome to WanderWorld</h2>
             <p class="p1">Your gateway to unforgettable travel experiences. Explore breathtaking destinations, exciting tours, and captivating galleries. Start your adventure with us today!</p>
+            <p>Discover the world with WanderWorld, where every journey is a new story waiting to be told. Whether you're seeking thrilling adventures or serene escapes, we have something for every traveler. Join us and make memories that will last a lifetime!</p>
         </div>
     </div>
-    
+<div class="locss">
+    <div class="ind">
+        <img  class="indim" src="image/india_main.jpg" alt="India">
+        <div class="ind-text">
+            <h2 class="h2i">Explore India</h2>
+            <p class="p2i">Discover the diverse landscapes, rich culture, and vibrant traditions of India with WanderWorld. From the majestic Himalayas to the serene backwaters of Kerala, embark on unforgettable journeys across this incredible country.</p>
+        </div>
+    </div>
+    <div class="usa">
+        <img class="usaimg" src="image/usa.webp" alt="">
+        <div class="usa-text">
+            <h2 class="h3u">Discover USA</h2>
+            <p class="p3u">Experience the dynamic spirit of the USA with WanderWorld. From the bustling streets of New York City to the breathtaking landscapes of national parks, explore the diverse attractions and vibrant culture that make America a top travel destination.</p>
+    </div>
+    </div>
+    <div class="aus">
+        <img class="ausimg" src="image/asu.jpg" alt="">
+        <div class="aus-text">
+            <h2 class="aush">Visit Australia</h2>
+            <p class="p4a">Dive into the wonders of Australia with WanderWorld. From the iconic Sydney Opera House to the stunning Great Barrier Reef, embark on thrilling adventures and explore the unique wildlife and landscapes that define this extraordinary country.</p>
+    </div>
+    </div>
+</div>
+<div class="newlo">
+    <div class="can">
+      <img class="canim" src="image/canada.webp" alt="Canada">
+        <div class="canada-text">
+            <h2 class="cah">Experience Canada</h2>
+            <p class="p5c">Discover the breathtaking beauty of Canada with WanderWorld. From the majestic Rocky Mountains to the vibrant cities of Toronto and Vancouver, explore the diverse landscapes and rich culture that make Canada a must-visit destination.</p>
+    </div>
+    </div>
+    <div class="new">
+        <img class="newim" src="image/new.jpg" alt="New Zealand">
+        <div class="new-text">
+            <h2 class="neh">Explore New Zealand</h2>
+            <p class="p6n">Embark on an unforgettable journey to New Zealand with WanderWorld. From the stunning fjords of Milford Sound to the vibrant culture of Maori heritage, experience the breathtaking landscapes and thrilling adventures.</p>
+        </div>
+    </div>
+</div>
+<div class="From">
+    <h3>Contact Us</h3>
+    <form id="contactForm">
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        <div class="radio-group">
+            <label><input type="radio" name="status" value="single"> Single</label>
+            <label><input type="radio" name="status" value="married"> Married</label>
+            <label><input type="radio" name="status" value="family"> Family</label>
+        </div>
+        <textarea id="message" placeholder="Enter your message" rows="4" required></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+<script src="scripts/validation.js"></script>
 </body>
 </html>
